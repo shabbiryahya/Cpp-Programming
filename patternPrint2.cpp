@@ -8,10 +8,16 @@ using namespace std;
     //5   * * * * *
 int main(int argc, char const *argv[])
 {
-    int row,col,n=4;
-    for(row=1;row<=5;row++)
+    int row,col,n,m;
+    cout<<"Enter a Number";
+
+    cin>>m;
+
+    n=m-1;
+
+    for(row=1;row<=m;row++)
     {
-        for(col=1;col<=5;col++)
+        for(col=1;col<=m;col++)
         {
              if(col<=n)
              {
