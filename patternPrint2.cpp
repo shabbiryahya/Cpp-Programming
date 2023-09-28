@@ -9,11 +9,11 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     
-    int row,col,n=4;
+    int row,col,n=4,m,k;
    
     for(row=1;row<=5;row++)
     {
-       
+        m=1;
         for(col=1;col<=5;col++)
         {
              if(col<=n)
@@ -22,12 +22,15 @@ int main(int argc, char const *argv[])
              } 
              else
              {
-                  cout<<"* ";
+                  cout<<m<<" ";
+                  m++;
+                
              }
         }
-
+        
         for(col=4;col>=1;col--)
         {
+          
              if(col<=n)
              {
                   cout<<"  ";
@@ -35,8 +38,9 @@ int main(int argc, char const *argv[])
              } 
              else
              {
-                  cout<<"* ";
-                  
+                    
+                  cout<<m-2<<" ";
+                  m--;
                
                                 
              }
