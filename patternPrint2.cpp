@@ -9,47 +9,11 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     
-    int row,col,n=4,m,k;
+    int row,col,n=4,m;
    
     for(row=1;row<=5;row++)
     {
-        m=1;
-        for(col=1;col<=5;col++)
-        {
-             if(col<=n)
-             {
-                  cout<<"  ";
-             } 
-             else
-             {
-                  cout<<m<<" ";
-                  m++;
-                
-             }
-        }
-        
-        for(col=4;col>=1;col--)
-        {
-          
-             if(col<=n)
-             {
-                  cout<<"  ";
-                  
-             } 
-             else
-             {
-                    
-                  cout<<m-2<<" ";
-                  m--;
-               
-                                
-             }
-        }
-        
-        n--;
-      
-      
-        
+         
         cout<<endl;
     }
     return 0;
